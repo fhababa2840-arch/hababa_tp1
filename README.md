@@ -115,6 +115,35 @@ JUSQU'A choix ≠ "oui"
 
 FIN
 ## Exercice 6:
+FONCTION Floyd(n)
+    compteur ← 1
+    POUR i ← 1 JUSQU'A n FAIRE
+        POUR j ← 1 JUSQU'A i FAIRE
+            ECRIRE (compteur, " ")
+            compteur ← compteur + 1
+        FIN POUR
+        ECRIRE (" ")
+    FIN POUR
+FIN FONCTION
+## Exercice 7:
+ALGORITHME somme_des_entiers
+      VAR nombre,somme:ENTIER
+
+      Fonction sommeEntier (n:ENTIER): ENTIER
+            Si (n = 1 ) Alors
+                  retourne  n
+            Sinon
+                  retourne  n + sommeEntier(n-1)
+            Fin Si
+      Fin Fonction
+
+DEBUT
+      
+      ecrire("Donner un nombre: ")
+      lire(nombre)
+      somme <-- sommeEntier(nombre)
+      ecrire(" La somme est: ", somme)
+FIN
 
 
 
